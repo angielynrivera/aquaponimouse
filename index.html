@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb0c6bf546.js" crossorigin="anonymous"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Exo+2:ital,wght@1,500&family=Source+Code+Pro:wght@600&display=swap');
+
+body{
+    background: url(img/bg3\ \(2\).png) center no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+nav{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0));
+    font-family: 'Source Code Pro', monospace;
+    }
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.left img{
+    height: 80px;
+    padding: 10px 30px;
+}
+
+.right ul li{
+    display: none;
+    /* display: inline-block; */
+    padding: 10px 5px;
+    margin: 10px 30px;
+}
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 3px;
+    transition: .5s;
+}
+.right li{
+    height: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .5s;
+    cursor: pointer;
+}
+
+.right li:hover{
+    border-bottom: 2px solid orangered;
+}
+.right li:hover a{
+    color: black;
+}
+
+.right i{
+   display: none;
+    margin: 30px 35px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.right i:hover{
+    color: black;
+}
+
+#title{
+    margin-top: 15%;
+    text-align: center;
+}
+.title{
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+.caption{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+button{
+    margin-top: 10px;
+    height: 50px;
+    width: 150px;
+    margin-right: 30px;
+    background: none;
+    border: 3px solid rgb(253, 77, 8);
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+button:hover{
+    background: rgb(228, 167, 167);
+}
+
+.button1 button{
+    background: rgb(228, 167, 167);
+}
+
+@media screen and (max-width: 940px){
+    .right ul li{
+        margin: 10px 15px;
+    }
+}
+@media screen and (max-width: 780px){
+    .right ul li{
+        margin: 10px 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .right i{
+        display: block;
+    }
+    .right ul li{
+        display: none;
+    }
+}
+
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-menu">
+            <div class="left">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="right" id="myNav">
+                <ul>
+                    <li><a href="" class="active">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">service</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="myFunction()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="title">
+        <div class="header">
+            <div class="title">
+                Hey, Angel
+            </div>
+            <div class="caption">
+                "I feel like we have a shot at beating the odds"
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="button1">
+                <button>Learn More</button>
+            </div>
+            <div class="button2">
+                <button>Or not</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
