@@ -2,183 +2,451 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaponiMouse</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/icon.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/eb0c6bf546.js" crossorigin="anonymous"></script>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Exo+2:ital,wght@1,500&family=Source+Code+Pro:wght@600&display=swap');
-
-body{
-    background: url(img/bg3\ \(2\).png) center no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    font-family: 'Exo 2', sans-serif;
-}
-nav{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0));
-    font-family: 'Source Code Pro', monospace;
-    }
-
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-}
-.left img{
-    height: 80px;
-    padding: 10px 30px;
-}
-
-.right ul li{
-    display: none;
-    /* display: inline-block; */
-    padding: 10px 5px;
-    margin: 10px 30px;
-}
-.right a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#fff;
-    letter-spacing: 3px;
-    transition: .5s;
-}
-.right li{
-    height: 20px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .5s;
-    cursor: pointer;
-}
-
-.right li:hover{
-    border-bottom: 2px solid orangered;
-}
-.right li:hover a{
-    color: black;
-}
-
-.right i{
-   display: none;
-    margin: 30px 35px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-.right i:hover{
-    color: black;
-}
-
-#title{
-    margin-top: 15%;
-    text-align: center;
-}
-.title{
-    font-size: 80px;
-    font-family: 'Dancing Script', cursive;
-}
-.caption{
-    margin-top: 10px;
-    font-size: 20px;
-}
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-}
-button{
-    margin-top: 10px;
-    height: 50px;
-    width: 150px;
-    margin-right: 30px;
-    background: none;
-    border: 3px solid rgb(253, 77, 8);
-    cursor: pointer;
-    outline: none;
-    transition: .5s;
-}
-button:hover{
-    background: rgb(228, 167, 167);
-}
-
-.button1 button{
-    background: rgb(228, 167, 167);
-}
-
-@media screen and (max-width: 940px){
-    .right ul li{
-        margin: 10px 15px;
-    }
-}
-@media screen and (max-width: 780px){
-    .right ul li{
-        margin: 10px 10px;
-    }
-}
-@media screen and (max-width: 768px){
-    .right i{
-        display: block;
-    }
-    .right ul li{
-        display: none;
-    }
-}
-
-    
-    </style>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-menu">
-            <div class="left">
-                <img src="img/logo2.png" alt="">
-            </div>
-            <div class="right" id="myNav">
-                <ul>
-                    <li><a href="" class="active">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">service</a></li>
-                    <li><a href="">service</a></li>
-                </ul>
-                <i class="fas fa-bars" onclick="myFunction()"></i>
-            </div>
-        </div>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="AquaponiMouse"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#top">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">our team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#price">price plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <section id="title">
-        <div class="header">
-            <div class="title">
-                Hey, Angel
-            </div>
-            <div class="caption">
-                "I feel like we have a shot at beating the odds"
-            </div>
+  </section>
+  <!-- -----slider------- -->
+  <div class="slider" id="top">
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#headerSlider" data-slide-to="1"></li>
+        <li data-target="#headerSlider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide1.jpg" class="d-block img-fluid">
         </div>
-        <div class="buttons">
-            <div class="button1">
-                <button>Learn More</button>
-            </div>
-            <div class="button2">
-                <button>Or not</button>
-            </div>
+        <div class="carousel-item">
+          <img src="img/slide2.jpg" class="d-block img-fluid">
         </div>
-    </section>
+        <div class="carousel-item">
+          <img src="img/slide3.jpg" class="d-block img-fluid">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myNav");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+  <!-- ---about--- -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <div class="about-content-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Soluta repellat exercitationem quibusdam obcaecati et.
+            Necessitatibus sed praesentium, quisquam obcaecati
+            impedit eveniet accusamus, a officia, sapiente
+            consequatur fugit iure maxime. Laboriosam?
+          </div>
+          <button class="btn btn-primary">Read More >>></button>
+        </div>
+        <div class="col-md-6 skills-bar">
+          <p>HTML5</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+          <p>CSS3</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+          </div>
+          <p>Wordpress</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+          </div>
+          <p>Photoshop</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 30%;">30%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section id="services">
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="row services">
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <h3>Anj</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam sed harum repellendus earum enim, nesciun
+            quasi quod recusandae corrupti eum modi voluptatem,
+            ad optio ab iste corporis delectus nisi.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa fa-tablet"></i>
+          </div>
+          <h3>Anj</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam sed harum repellendus earum enim, nesciun
+            quasi quod recusandae corrupti eum modi voluptatem,
+            ad optio ab iste corporis delectus nisi.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa fa-file"></i>
+          </div>
+          <h3>Anj</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam sed harum repellendus earum enim, nesciun
+            quasi quod recusandae corrupti eum modi voluptatem,
+            ad optio ab iste corporis delectus nisi.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa fa-calculator"></i>
+          </div>
+          <h3>Anj</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam sed harum repellendus earum enim, nesciun
+            quasi quod recusandae corrupti eum modi voluptatem,
+            ad optio ab iste corporis delectus nisi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- teaaaaaaaaam -->
+  <section id="team">
+    <div class="container">
+      <h1>Our team</h1>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 text-center profile-pic">
+          <div class="img-box">
+            <img src="img/anj.JPG" class="img-responsive">
+            <ul class="list-unstyled">
+              <a href="https://www.instagram.com/angielynrivera/">
+                <li class="fa fa-facebook"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-instagram"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-twitter"></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Angielyn Rivera</h2>
+          <h3>WEB DEV / QA</h3>
+          <p>Graduate of BS Computer Engineering, subscribe to my yt channel coz im pretty.
+            Are you 40 yrs and above? apply to me, I like bad sugar daddys
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center profile-pic">
+          <div class="img-box">
+            <img src="img/shen.JPG" class="img-responsive">
+            <ul class="list-unstyled">
+              <a href="https://www.instagram.com/angielynrivera/">
+                <li class="fa fa-facebook"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-instagram"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-twitter"></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Shenna Jardin</h2>
+          <h3>WEB DEV / HR / ADMIN</h3>
+          <p>Graduate of BS Computer Engineering, BS Business & Adminitration, BS Psychology,
+            hire me coz i'm all around baby</p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center profile-pic">
+          <div class="img-box">
+            <img src="img/brey.JPG" class="img-responsive">
+            <ul class="list-unstyled">
+              <a href="https://www.instagram.com/angielynrivera/">
+                <li class="fa fa-facebook"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-instagram"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-twitter"></li>
+              </a>
+            </ul>
+          </div>
+          <h2>John Brenon Francisco</h2>
+          <h3>FULL STACK WEB DEV / LOANER</h3>
+          <p>Graduate of BS Computer Engineering, BS Business & Administration major in
+            Loan shark. If there is people, therefore I can save money.
+            You can loan money from me, im dadi </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center profile-pic">
+          <div class="img-box">
+            <img src="img/dey.JPG" class="img-responsive">
+            <ul class="list-unstyled">
+              <a href="https://www.instagram.com/angielynrivera/">
+                <li class="fa fa-facebook"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-instagram"></li>
+              </a>
+              <a href="">
+                <li class="fa fa-twitter"></li>
+              </a>
+            </ul>
+          </div>
+          <h2>Mark Deo Limson</h2>
+          <h3>QUALITY CONTROL / CEO OF SCAMMER INC.</h3>
+          <p>Gradute of BS Computer Engineering, Certified Scammer of the year.
+            Hey, you. No, All of you,
+            I am forever scammer until the last strand of my body hair falls off.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- promo -->
+  <section id="promo">
+    <div class="container">
+      <p>Get Discount with your first Aquaponics</p>
+      <a href="" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- price plans -->
+  <section id="price">
+    <div class="container">
+      <h1 class="text-center">Price Plan</h1>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <div class="price-box">
+            <div class="price-header">
+              <h2 class="text-uppercase">Free</h2>
+              <p>$0<span>/month</span></p>
+            </div>
+            <div class="price-content">
+              <ul class="list-unstyled">
+                <li> <i class="fa fa-check-circle"></i> 5GB Space</li>
+                <li><i class="fa fa-check-circle"></i> 10GB Bandwidth</li>
+                <li><i class="fa fa-times-circle"></i> 15 Email Account</li>
+                <li><i class="fa fa-times-circle"></i> Unlimited Domain</li>
+                <li><i class="fa fa-times-circle"></i> Unlimited Support</li>
+              </ul>
+            </div>
+            <div class="price-footer">
+              <a href="" class="buy-btn">Join Free</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="price-box">
+            <div class="price-header">
+              <h2 class="text-uppercase">basic</h2>
+              <p>$15<span>/month</span></p>
+            </div>
+            <div class="price-content">
+              <ul class="list-unstyled">
+                <li> <i class="fa fa-check-circle"></i> 10GB Space</li>
+                <li><i class="fa fa-check-circle"></i> 100GB Bandwidth</li>
+                <li><i class="fa fa-check-circle"></i> 15 Email Account</li>
+                <li><i class="fa fa-times-circle"></i> Unlimited Domain</li>
+                <li><i class="fa fa-times-circle"></i> Unlimited Support</li>
+              </ul>
+            </div>
+            <div class="price-footer">
+              <a href="" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="price-box">
+            <div class="price-header">
+              <h2 class="text-uppercase">advanced</h2>
+              <p>$50<span>/month</span></p>
+            </div>
+            <div class="price-content">
+              <ul class="list-unstyled">
+                <li> <i class="fa fa-check-circle"></i> 20GB Space</li>
+                <li><i class="fa fa-check-circle"></i> 200GB Bandwidth</li>
+                <li><i class="fa fa-check-circle"></i> 50 Email Account</li>
+                <li><i class="fa fa-check-circle"></i> Unlimited Domain</li>
+                <li><i class="fa fa-times-circle"></i> Unlimited Support</li>
+              </ul>
+            </div>
+            <div class="price-footer">
+              <a href="" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="price-box">
+            <div class="price-header">
+              <h2 class="text-uppercase">yayamanin</h2>
+              <p>$1M<span>/month</span></p>
+            </div>
+            <div class="price-content">
+              <ul class="list-unstyled">
+                <li> <i class="fa fa-check-circle"></i> 50GB Space</li>
+                <li><i class="fa fa-check-circle"></i> Unlimited Bandwidth</li>
+                <li><i class="fa fa-check-circle"></i> Unlimited Account</li>
+                <li><i class="fa fa-check-circle"></i> Unlimited Domain</li>
+                <li><i class="fa fa-check-circle"></i> Unlimited Support</li>
+              </ul>
+            </div>
+            <div class="price-footer">
+              <a href="" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <h1 class="text-center">Testimonials</h1>
+      <p class="text-center">Oh come on, meet our oppas and umaahs!</p>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img src="img/seo.jpg" class="user">
+            <blockquote>
+              Grabe, Ang ganda ni Angielyn, sana sya nalang
+              yung naging leading lady ko sa mga kdrama ko
+              pareha kami maganda tsaka pogi. grabe mahal ko na sya
+            </blockquote>
+            <h3>Park Seo Joon <span>Bf ni anj</span> </h3>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img src="img/jennie.jpg" class="user">
+            <blockquote>
+              Di ko lang sure ah. pero magkaboses kami ni anghelin.
+              eto pa, di ko alam pareha kaming cute nakakabwiset,
+              pero wala eh gaya gaya sya ng mukha.
+            </blockquote>
+            <h3>Jennie Kim <span>Doppleganger ni anj</span> </h3>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img src="img/iu.jpg" class="user">
+            <blockquote>
+              Grabe lang, di ko akalain na magkambal kami after all these years,
+              kundi pa ko lumabas ng Hotel, di ko pa sya makikilala. Mayghadds <br>
+              Labyu Sis
+            </blockquote>
+            <h3>IU <span>kambal ni anj</span> </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="text-center">Get In Touch</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="" class="contact-form">
+            <div class="form-group">
+              <input class="form-control" type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="number" name="phoneno" placeholder="Phone no.">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+              </textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div class="col-md-6 contact-info">
+          <div class="follow"><b>Address:</b> <i class="fa fa-map-marker"></i> Valleygolf, Cainta, PH</div>
+          <div class="follow"><b>Phone:</b> <i class="fa fa-phone"></i> (666) 123-4567</div>
+          <div class="follow"><b>Email:</b> <i class="fa fa-envelope-o"></i> auaponimouse@scammer.deo</div>
+          <div class="follow"><b>Get Social:</b>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-youtube-play"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-google-plus"></i></a>
+          </div>
+        </div>
+        </>
+      </div>
+  </section>
+
+  <!-- footer -->
+  <section id="footer">
+    <div class="container text-center">
+      <p>Made by <i class="fa fa-heartbeat"></i> Lilay </i></p>
+    </div>
+  </section>
 
 
 </body>
