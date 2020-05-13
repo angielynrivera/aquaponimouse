@@ -1,2 +1,2 @@
 # aquaponimouse
-website for my group
+Sample website for my thesis group
